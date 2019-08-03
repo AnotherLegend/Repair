@@ -1,6 +1,23 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -68,24 +85,25 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 13px;
-  font-weight: 400;
 }
 
 .navbar__button {
   margin-left: 30px;
   font-size: 12px;
-  font-weight: 600;
   width: 170px;
   height: 49px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .navbar__phone {
   display: inline-block;
   color: #333333;
   font-size: 20px;
-  font-weight: 600;
   text-decoration: none;
   margin-top: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -120,17 +138,19 @@ img {
 
 .hero-text__title {
   font-size: 41px;
-  font-weight: 600;
   line-height: 55px;
   margin-bottom: 15px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  font-weight: 500;
   line-height: 65px;
   margin-bottom: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-list {
@@ -145,14 +165,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .hero-list__image {
-  -ms-flex-preferred-size: 40px;
-      flex-basis: 40px;
-  width: 40px;
-  height: 40px;
+  -ms-flex-preferred-size: 38px;
+      flex-basis: 38px;
+  width: 38px;
+  height: 38px;
   border: 2px solid #ffd200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,6 +184,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
+  margin-left: 0;
   margin-right: 30px;
 }
 
