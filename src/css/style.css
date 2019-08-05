@@ -51,12 +51,17 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
+  outline: none;
   padding: 18px 30px;
 }
 
 .button:hover {
   background-color: #ffdb33;
   cursor: pointer;
+}
+
+.button:active {
+  background-color: #ff0055;
 }
 
 .section {
@@ -229,10 +234,11 @@ img {
 }
 
 .hero-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  width: 100%;
-  margin-top: 40px;
 }
 
 @media (max-width: 1200px) {
