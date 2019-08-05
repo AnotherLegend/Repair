@@ -1,18 +1,19 @@
 .hero
-    padding-top: 50px 
+    padding-top: 50px 0
+    background: $secondary
     &-block
         display: flex
-        
     &-text
         flex-basis: 90%
         padding-right: 100px
+        padding-top: 50px
         &__title
             font-size: 41px
             line-height: 55px
             margin-bottom: 35px
             +bold
         &__subtitle
-            display: inline-flex
+            display: inline-block
             font-size: 20px
             margin-bottom: 70px
             +bold
@@ -22,7 +23,9 @@
         &__item
             display: flex
             align-items: center
-            margin-bottom: 28px
+            margin-bottom: 32px
+            &:list-child
+                margin-bottom: 0
         &__image
             flex-basis: 38px
             min-width: 38px
@@ -37,7 +40,8 @@
             max-width: 300px
     &-image
         box-shadow: 0 0 10px rgba(0,0,0,0.5)
-        width: 115%
+        width: 100%
+        margin-top: 40px
 @media (max-width: 1200px)
     .hero
         &-block
