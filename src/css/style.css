@@ -330,6 +330,50 @@ img {
   min-height: 70px;
 }
 
+.section-info {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.section-info__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+  margin-left: 0;
+}
+
+.section__block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.section__phone {
+  color: #333333;
+  font-size: 15px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
