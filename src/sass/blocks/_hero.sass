@@ -1,12 +1,11 @@
 .hero
-    padding-top: 50px 0
+    // padding-top: 50px 0
     background: $secondary
     &-block
         display: flex
     &-text
         flex-basis: 90%
-        padding-right: 100px
-        padding-top: 50px
+        padding: 50px 0
         &__title
             font-size: 41px
             line-height: 55px
@@ -23,7 +22,7 @@
         &__item
             display: flex
             align-items: center
-            margin-bottom: 32px
+            margin-bottom: 31px
             &:list-child
                 margin-bottom: 0
         &__image
@@ -38,9 +37,12 @@
             margin-right: 30px
         &__text
             max-width: 300px
+            font-size: 14px
+            line-height: 24px
     &-image
+        width: 100%
         align-self: center
-        box-shadow: 0 0 10px rgba(0,0,0,0.5)
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05)
 @media (max-width: 1200px)
     .hero
         &-block
